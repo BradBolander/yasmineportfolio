@@ -1,0 +1,25 @@
+{
+"projects":[
+
+      {"title":"Geometric", "url":"/images/art1.png", "id":1},
+
+      {"title":"Forest", "url":"/images/art2.png", "id":2},
+
+      {"title":"Pumpkins", "url":"/images/art3.png", "id":3},
+
+      {"title":"Flower/Geometry", "url":"/images/art4.jpg", "id":4},
+
+      {"title":"Photography-1", "url":"/images/art5.jpg", "id":5},
+
+      {"title":"Photography-2", "url":"/images/art6.jpg", "id":6},
+
+      {"title":"Self Portrait", "url":"/images/art7.jpg", "id":7},
+
+      {"title":"Photography-3", "url":"/images/art8.jpg", "id":8},
+
+      {"title":"Photography-4", "url":"/images/art9.jpg", "id":9},
+
+      {"title":"Pumpkins-2", "url":"/images/art10.jpg", "id":10}
+
+  ]
+}

@@ -1,30 +1,117 @@
 body {
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-  background-image: url("/images/nature2.png");
+  font: 14px "Azo Sans", Helvetica, Arial, sans-serif;
+  font-family: "Azo Sans";
+  background-color: rgb(83, 35, 35) !important;
   background-size: cover;
 }
-
+html {
+  font-family: "Azo Sans";
+}
 a {
   color: #00B7FF;
 }
+#app {
+
+  clear: both;
+  height: auto;
+  min-height: 2000px;
+}
+
+
 header {
-  height: 500px;
+  height: 1000px;
   width: 100%;
   margin-bottom: 20px;
   text-align: center;
-  color: rgb(31, 120, 91);
+  color: rgb(203, 203, 203);
   border: 1px solid black;
-  background-image: url("/images/nature.png");
+  background-image: url("/images/header-background.jpg");
   background-size: cover;
-  font-family: oswald;
+  font-size: 32px;
+  font-family: "Proxima Nova";
 }
+
 #title {
-  margin-top: 200px
+  text-align: center;
+}
+.nav-main {
+  display: inline;
+  position: absolute;
+  top: 25px;
+  min-width: 600px;
+}
+.nav-button {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+}
+.nav-button:hover {
+  color: rgb(17, 198, 255) !important;
+}
+.nav-button:active {
+  color: rgb(17, 198, 255) !important;
+}
+.nav-item {
+  margin-left: 50px;
+  display: inline;
+
 }
 .backdrop {
-  margin-top: 0px;
+  top: 0px;
+  position: absolute;
   background-color: rgba(3, 3, 3, 0.7);
+  height: 100px;
+  width: 100%;
+}
+.title {
+  position: absolute;
+  text-align: center;
+  margin-left: 10px;
+  color: rgb(190, 190, 190);
+}
+.projectsContainer {
+  height: auto;
+  overflow-x: auto;
+  margin-top: 100px !important;
+  max-width: 1600px;
+  width: auto;
+  margin: 0 auto;
+  display: block;
+}
+.about-section {
+  line-height: 2;
+  color: white;
   height: 200px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 275px;
+  padding: 50px;
+  text-align: center;
+}
+.block-title {
+  text-align: center;
+  margin-bottom: 50px;
+  color: white;
+}
+.about-section > h3 {
+  text-align: center;
+}
+.project-block {
+  width: 430px;
+  height: 300px;
+  float: left;
+  margin-left: 75px;
+  margin-bottom: 75px;
+}
+.title-backdrop {
+  width: 430px;
+  height: 50px;
+  position: absolute;
+  margin-top: 250px;
+  background-color: rgba(71, 76, 93, 0.7);
+}
+.project-image {
+  width: 100%;
+  height: 300px;
 }
 
 footer {
@@ -33,33 +120,4 @@ footer {
   /*background-color: rgba(120, 120, 120, 0.83);*/
   position: absolute;
   bottom: -600px;
-}
-
-.col-md-3.project {
-  height: 250px;
-  margin-left: 30px;
-  margin-top: 30px;
-  text-align: center;
-  border: 1px solid rgb(55, 55, 55);
-  background-color: rgba(119, 119, 119, 0.61);
-}
-
-.col-md-3.project.one {
-  background-image: url("/images/art1.png");
-  background-size: cover;
-}
-.col-md-3.project.two {
-  background-image: url("/images/art2.png");
-  background-size: cover;
-}
-.col-md-3.project.three {
-  background-image: url("/images/art3.png");
-  background-size: cover;
-}
-
-.col-md-1.button {
-  top: 100px;
-  height: 100px;
-  border: 1px solid rgb(55, 55, 55);
-  background-color: rgba(120, 120, 120, 0.73)
 }

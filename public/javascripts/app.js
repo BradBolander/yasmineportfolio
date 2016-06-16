@@ -1,28 +1,6 @@
-$( document ).ready( function() {
-  $(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[#projectsContainer=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html, body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
-});
-
-
-
-$('.projectsContainer').hide();
 setTimeout(function(){
     $('.projectsContainer').addClass('magictime puffIn');
 }, 100);
-
-
 
 var ProjectsContainer = React.createClass({
   componentDidMount: function() {
@@ -49,9 +27,9 @@ var ProjectsContainer = React.createClass({
       <div id="app">
       <NavBar/>
       <About/>
-      <h1 className="block-title">Projects</h1>
+     
       <ProjectsGrid data={this.state.data} />
-      <hr/>
+     
       <Contact/>
       </div>
     );
@@ -81,8 +59,7 @@ var About = React.createClass({
     return (
       <div className="about-section">
         <h1>My name is Yasmine Esparza</h1>
-        <hr></hr>
-        <h3>Readymade helvetica taxidermy quinoa, street art DIY locavore kinfolk squid vice cold-pressed. Banjo bushwick vegan offal helvetica, kitsch man bun chicharrones. Authentic 90's paleo, cronut kogi ugh squid biodiesel artisan chillwave. Four dollar toast dreamcatcher salvia, gluten-free flexitarian health goth iPhone typewriter semiotics kitsch cornhole everyday carry vice. Raw denim kitsch umami chillwave, biodiesel williamsburg artisan tumblr cred skateboard salvia. Pitchfork tacos affogato, plaid etsy hella lomo portland craft beer. Cold-pressed 90's bitters normcore literally.</h3>
+        <p>and I love making art. I enjoy creating in various mediums including, oil paints, acrylics, and watercolour, and photography. I even do a bit of sculpting. These are my creations. </p>
       </div>
     );
   }
@@ -96,10 +73,11 @@ var Contact = React.createClass({
 
           </div>
       </div>
-    );
+    )
   }
 });
-
+   
+  
 var ProjectsGrid = React.createClass({
   render: function() {
     var projectGrid = this.props.data.map(function(project, index) {
@@ -109,7 +87,7 @@ var ProjectsGrid = React.createClass({
       );
     });
     return (
-      <div id="projectsContainer" className="magictime puffIn projectscontainer">
+      <div id="projectsContainer" className="magictime puffIn projectsContainer col-md-12">
           { projectGrid }
       </div>
     );
@@ -119,10 +97,10 @@ var ProjectsGrid = React.createClass({
 var Project = React.createClass({
   render: function() {
     return (
-      <div className="project-block">
-        <div className="title-backdrop">
+      <div className="project-block col-md-6">
+        
           <h4 className="block-title">{this.props.title}</h4>
-        </div>
+    
         <img className="project-image" src={this.props.url} ></img>
       </div>
     )

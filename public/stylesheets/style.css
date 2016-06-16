@@ -1,7 +1,7 @@
 body {
   font: 14px "Azo Sans", Helvetica, Arial, sans-serif;
   font-family: "Azo Sans";
-  background-color: rgb(83, 35, 35) !important;
+  background-color: white !important;
   background-size: cover;
 }
 html {
@@ -17,38 +17,46 @@ a {
   min-height: 2000px;
 }
 
+.spacer {
+  height:1000px;
+  position: relative
+
+}
 
 header {
   height: 1000px;
   width: 100%;
   margin-bottom: 20px;
   text-align: center;
-  color: rgb(203, 203, 203);
+  color: black;
   border: 1px solid black;
   background-image: url("/images/header-background.jpg");
   background-size: cover;
   font-size: 32px;
+  position: absolute;
   font-family: "Proxima Nova";
 }
 
 #title {
-  text-align: center;
+  text-align: left;
+  padding-left: 25px;
 }
 .nav-main {
-  display: inline;
   position: absolute;
+  right: 0px;
   top: 25px;
-  min-width: 600px;
+  color: black;
+  min-width: 400px;
 }
 .nav-button {
   background-color: transparent;
-  color: rgb(255, 255, 255);
+  color: black;
 }
 .nav-button:hover {
-  color: rgb(17, 198, 255) !important;
+  color: rgb(190, 190, 190) !important;
 }
 .nav-button:active {
-  color: rgb(17, 198, 255) !important;
+  color: rgb(190, 190, 190) !important;
 }
 .nav-item {
   margin-left: 50px;
@@ -58,13 +66,14 @@ header {
 .backdrop {
   top: 0px;
   position: absolute;
-  background-color: rgba(3, 3, 3, 0.7);
-  height: 100px;
+  background-color: rgba(250, 250, 250, 0.6);
+  height: 60px;
   width: 100%;
 }
 .title {
   position: absolute;
   text-align: center;
+  top: 0;
   margin-left: 10px;
   color: rgb(190, 190, 190);
 }
@@ -72,34 +81,29 @@ header {
   height: auto;
   overflow-x: auto;
   margin-top: 100px !important;
-  max-width: 1600px;
   width: auto;
   margin: 0 auto;
   display: block;
 }
 .about-section {
   line-height: 2;
-  color: white;
+  color: black;;
   height: 200px;
   margin-left: 50px;
   margin-right: 50px;
-  margin-bottom: 275px;
   padding: 50px;
   text-align: center;
 }
 .block-title {
   text-align: center;
   margin-bottom: 50px;
-  color: white;
+  color: black;
 }
 .about-section > h3 {
   text-align: center;
 }
 .project-block {
-  width: 430px;
-  height: 300px;
   float: left;
-  margin-left: 75px;
   margin-bottom: 75px;
 }
 .title-backdrop {
@@ -110,8 +114,10 @@ header {
   background-color: rgba(71, 76, 93, 0.7);
 }
 .project-image {
-  width: 100%;
+  width: 430px;
   height: 300px;
+  margin: 0 auto;
+  display: block;
 }
 
 footer {

@@ -14,7 +14,6 @@ var ProjectsContainer = React.createClass({
       cache: 'false',
       async: false,
       complete: function(obj) {
-        console.log(obj.responseJSON.projects);
         this.setState({data: obj.responseJSON.projects});
       }.bind(this)
     });
@@ -43,11 +42,11 @@ var NavBar = React.createClass({
           <div className="nav-item about">
             <button className="btn btn-default-outline nav-button">Me</button>
           </div>
-          <div  className="nav-item projects">
+          <div className="nav-item projects">
             <a id="projects-link" href="#projectsContainer"><button className="btn btn-default-outline nav-button">Projects</button></a>
           </div>
           <div className="nav-item contact">
-            <button className="btn btn-default-outline nav-button">Contact</button>
+            <a href="#contact"><button className="btn btn-default-outline nav-button">Contact</button></a>
           </div>
       </div>
     );
@@ -68,9 +67,11 @@ var About = React.createClass({
 var Contact = React.createClass({
   render: function() {
     return (
-      <div className="contact-section">
+      <div id="contact" className="contact-section">
           <div className="social-media">
-
+            <a href="#"><i className="fa fa-twitter fa-4x social-icon" aria-hidden="true"></i></a>
+            <a href="#"><i className="fa fa-facebook fa-4x social-icon" aria-hidden="true"></i></a>
+            <a href="#"><i className="fa fa-tumblr-square fa-4x social-icon" aria-hidden="true"></i></a>
           </div>
       </div>
     )
@@ -81,7 +82,6 @@ var Contact = React.createClass({
 var ProjectsGrid = React.createClass({
   render: function() {
     var projectGrid = this.props.data.map(function(project, index) {
-      console.log(project);
       return (
         <Project title={project.title} url={project.url} id={project.id} />
       );

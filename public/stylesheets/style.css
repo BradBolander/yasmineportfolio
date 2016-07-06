@@ -120,6 +120,23 @@ header {
   display: block;
 }
 
+.contact-section {
+  height: 100px;
+  background-color: #4E4E4E;
+  padding-top: 30px;
+  color: white;
+}
+
+.social-media {
+  width: 300px;
+  margin: 0 auto;
+  display: block;
+}
+
+.social-icon {
+  padding-left: 35px;
+}
+
 footer {
   height: 100px;
   width: 100%;
